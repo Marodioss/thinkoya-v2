@@ -21,7 +21,7 @@ export const Home = () => {
   }, []);
 
   const getDesigns = async () => {
-    const res = await axios.get("https://thinkoya.com/api/designs");
+    const res = await axios.get("https://api.thinkoya.com/api/designs");
     setData(res.data);
     setFilter(res.data);
   };

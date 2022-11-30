@@ -14,7 +14,7 @@ export const Design = () => {
 
   const getDesigns = async () => {
     const res = await axios.get(
-      "https://thinkoya.com/api/designs/" + idDesigns
+      "https://api.thinkoya.com/api/designs/" + idDesigns
     );
     setData(res.data);
   };

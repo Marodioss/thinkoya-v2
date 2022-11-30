@@ -19,7 +19,7 @@ export const AddDesign = () => {
   useEffect(() => {}, []);
 
   const addDesign = async () => {
-    const res = await axios.post("https://thinkoya.com/api/designs", {
+    const res = await axios.post("https://api.thinkoya.com/api/designs", {
       TitleDesigns,
       DescriptionDesign,
       Category,

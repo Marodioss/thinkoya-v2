@@ -1,0 +1,30 @@
+
+.filter{
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background: transparent;
+    position: relative;
+    top: 20px;
+    border: 6px red;
+}
+
+.logo-top{
+    height: 40px;
+    width: 150px;
+}
+.dropdown{
+    z-index: 20 !important;
+    background: transparent;
+}
+.dropmenu{
+    z-index: 20 !important;
+    width:195px;
+}
+.dropdown-item{
+    z-index: 20 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: bold;
+}

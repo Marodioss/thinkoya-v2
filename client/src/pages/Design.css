@@ -1,0 +1,31 @@
+.photo{
+    width: 50%;
+    height: 50%;
+  
+}
+
+.slide-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.slide-container .each-slide .photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 700px;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    cursor: pointer;
+
+}
+
+
+

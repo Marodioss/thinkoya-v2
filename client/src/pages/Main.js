@@ -31,7 +31,7 @@ export const Main = () => {
 
   const getDesigns = async () => {
     setLoading(true);
-    const res = await axios.get("http://localhost:5000/api/designs");
+    const res = await axios.get("https://api.thinkoya.com/api/designs");
     setData(res.data);
     setFilter(res.data);
     setLoading(false);
@@ -100,7 +100,7 @@ export const Main = () => {
             >
               <motion.div
                 // Animate the initial position and scale of the design container
-                initial={{ x: -450, scale: 1.5 }}
+                initial={{ x: -50, scale: 1.5 }}
                 // Allow the design container to be dragged
                 drag
                 dragDamping={0.2}

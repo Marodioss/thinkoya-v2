@@ -15,21 +15,6 @@ function Filter({ data, setFilter, setActiveGender, activeGender }) {
   }, [activeGender]);
 
   return (
-    // <div className="filter">
-    //   <ChakraProvider>
-    //     <Select
-    //       placeholder="Select Category"
-    //       onChange={(e) => setActiveGender(e.target.value)}
-    //       variant="flushed"
-    //     >
-    //       <option value="All">All</option>
-    //       <option value="Villa">Villa</option>
-    //       <option value="Propositions">Propositions</option>
-    //       <option value="Equipements">Equipements</option>
-    //       <option value="Design Interieur">Design Interieur</option>
-    //     </Select>
-    //   </ChakraProvider>
-    // </div>
     <div className="filter">
       <Dropdown className="dropdown" variant="light">
         {/* <Dropdown.Toggle id="dropdown-basic">Thinkoya</Dropdown.Toggle> */}

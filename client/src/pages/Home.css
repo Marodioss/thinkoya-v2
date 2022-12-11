@@ -83,6 +83,7 @@ body{
     /*Tablets [601px -> 1200px]*/
     .components {
         width: 120%;
+        z-index: 15000 !important;
         height: auto;
         margin: 10px auto;
         display: flex;
@@ -118,6 +119,8 @@ body{
 }
 @media only screen and (max-width: 1300px){
 	.components {
+        margin-top: 100px;
+        
         width: 100%;
         margin: 10px auto;
         display: flex;
@@ -130,6 +133,8 @@ body{
     .components .design{
         width : calc(100% / 5 - 70px);
         padding: 10px;
+        z-index: 15000 !important;
+       
       
     }
     
@@ -137,6 +142,7 @@ body{
     .components .photos{
         height: 100px;
         width: 170px;
+      
     }
     .components #centred-title{
         display: flex;
@@ -167,7 +173,7 @@ body{
         flex-wrap: wrap;
     }
     .components .filter{
-        z-index: 5 !important;
+        /* z-index: 5 !important; */
     }
     .components .design{
         width : calc(100% / 4);

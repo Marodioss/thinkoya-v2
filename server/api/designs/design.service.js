@@ -13,7 +13,7 @@ module.exports = {
       result = fetchDesignResult[0];
       for (var i in result) {
         const fetchDesignImageResult = await connection.query(
-          `SELECT idImages ,CONCAT('https://api.thinkoya.com/upload/images/',image) as url
+          `SELECT idImages ,CONCAT('http://localhost:5000/upload/images/',image) as url
                     FROM designs_image WHERE design_id = ?`,
           [result[i].idDesigns]
         );
@@ -41,7 +41,7 @@ module.exports = {
       result = fetchDesignResult[0];
       for (var i in result) {
         const fetchDesignImageResult = await connection.query(
-          `SELECT idImages ,CONCAT('https://api.thinkoya.com/upload/images/',image) as url
+          `SELECT idImages ,CONCAT('http://localhost:5000/upload/images/',image) as url
                     FROM designs_image WHERE design_id = ?`,
           [result[i].idDesigns]
         );

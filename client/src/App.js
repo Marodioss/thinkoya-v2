@@ -7,13 +7,14 @@ import { About } from "./pages/About";
 import { AddDesign } from "./pages/AddDesign";
 import { ContactUS } from "./pages/Contactus";
 import { Design } from "./pages/Design";
-import { Home } from "./pages/Home";
+// import { Home } from "./pages/Home";
+import Main from "./pages/Main";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/:idDesigns" element={<Design />} />
         <Route path="/AddDesign" element={<AddDesign />} />
         <Route path="/ContactUS" element={<ContactUS />} />

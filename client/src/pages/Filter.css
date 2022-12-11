@@ -12,16 +12,16 @@
 }
 
 .logo-top{
-    height: 40px;
-    width: 150px;
+    height: 45px;
+    width: 250px;
 }
 .dropdown{
     z-index: 20 !important;
-    background: transparent;
+    background: transparent; 
 }
 .dropmenu{
     z-index: 20 !important;
-    width:195px;
+    width:295px;
 }
 .dropdown-item{
     z-index: 20 !important;

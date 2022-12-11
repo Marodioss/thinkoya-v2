@@ -1,0 +1,27 @@
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-color: #333 transparent transparent transparent;
+    border-style: solid;
+    border-width: 0.25em;
+    border-radius: 50%;
+    animation: spinner-border 1.2s linear infinite;
+  }
+  
+  @keyframes spinner-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

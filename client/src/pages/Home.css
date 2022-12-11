@@ -1,42 +1,43 @@
 :root{
     --font-text: 'Graphik', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
-    overflow: hidden;
-    font-family:Graphik;
-    font-display:swap;
-    height: 100vh;
-    margin-top: 20px;
+/* *{
+   
 }
-#root{
-    height: 100vh;
+body{
+   
+} */
+.Main{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: var(--font-text);
+    font-display:swap;
+
 }
 .components {
-    width: 180%;
-    height: 100vh;
-    padding-right: 20px;
-    padding-left: -25px;
+    width: 100%;
+    height: 80vh;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
     flex-direction: row; 
     flex-wrap: wrap; 
-    align-items: center;
+    /* align-items: center; */
     cursor: grab;
     z-index: 0;
 }
 
 .components .design{
-    width : calc(100% / 9 - 70px);
-    padding: 10px;
-
+    width : calc(100% / 4);
+    /* padding: 10px; */
+    /* margin-top: -55px; */
 }
 
 
 .components .photos{
     height: 140px;
     width: 220px;
-   
 }
 
 
@@ -157,24 +158,20 @@ body{
 
 @media only screen and (max-width: 700px){
     .components {
-        margin: 100px auto;
-        width: 180%;
-        height: 100vh;
+        width: 100%;
+        height: 80vh;
         display: flex;
-        justify-content: center;
-        align-items: stretch;
-        gap: 160px;
-        cursor: grab;
-        z-index: -2 !important;
+        /* gap: 15px; */
+        margin-left: 15px;
+        flex-direction: column; 
+        flex-wrap: wrap;
     }
     .components .filter{
         z-index: 5 !important;
     }
     .components .design{
-        width : calc(100% / 9 - 10px);
+        width : calc(100% / 4);
         height: auto;
-        margin: -20px;
-        margin-top: -120px;
     }
     .components #centred-title{
         display: flex;

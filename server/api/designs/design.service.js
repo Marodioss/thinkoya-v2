@@ -1,4 +1,3 @@
-// const pool = require('./database');
 const pool = require("../../config/database");
 module.exports = {
   find: async () => {
@@ -41,7 +40,7 @@ module.exports = {
       result = fetchDesignResult[0];
       for (var i in result) {
         const fetchDesignImageResult = await connection.query(
-          `SELECT idImages ,CONCAT('https://api.thinkoya.com/upload/images/,image) as url
+          `SELECT idImages ,CONCAT('https://api.thinkoya.com/upload/images/',image) as url
                     FROM designs_image WHERE design_id = ?`,
           [result[i].idDesigns]
         );

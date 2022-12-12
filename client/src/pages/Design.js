@@ -25,11 +25,7 @@ export const Design = () => {
         return (
           <>
             <div className="design">
-              <div className="design__container">
-                <div className="design__container__title">
-                  <h1>{design.TitleDesigns}</h1>
-                </div>
-              </div>
+              <div className="design__container"></div>
             </div>
             <div className="each-slide" key={index}>
               <Slide>
@@ -44,6 +40,9 @@ export const Design = () => {
                   );
                 })}
               </Slide>
+            </div>
+            <div className="design__container__title">
+              <h1>{design.TitleDesigns}</h1>
             </div>
           </>
         );
